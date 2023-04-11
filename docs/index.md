@@ -1,10 +1,12 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+# layout: doc
+# layoutClass: m-nav-layout
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
+  name: "My Refreshed Space"
+  text: "A Record Site"
   tagline: My great project tagline
   actions:
     - theme: brand
