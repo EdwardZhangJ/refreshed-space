@@ -1,23 +1,11 @@
-// interface Theme {
-//   /**
-//    * Root layout component for every page
-//    * @required
-//    */
-//   Layout: Component
-//   /**
-//    * Enhance Vue app instance
-//    * @optional
-//    */
-//   enhanceApp?: (ctx: EnhanceAppContext) => Awaitable<void>
-//   /**
-//    * Extend another theme, calling its `enhanceApp` before ours
-//    * @optional
-//    */
-//   extends?: Theme
-// }
+// https://vitepress.dev/guide/custom-theme
+import Layout from './Layout.vue'
+import './style.css'
 
-// interface EnhanceAppContext {
-//   app: App // Vue app instance
-//   router: Router // VitePress router instance
-//   siteData: Ref<SiteData> // Site-level metadata
-// }
+export default {
+  Layout,
+  enhanceApp({ app, router, siteData }) {
+    // ...
+  }
+}
+
